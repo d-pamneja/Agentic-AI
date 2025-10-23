@@ -1,28 +1,6 @@
 const flowConfig = {
   "id": "80cb1872-749d-4dbf-bfda-de74952d9d8f",
   "name": "Little Farmer",
-  "edges": [
-    {
-      "id": "triggerNode_1-responseNode_triggerNode_1",
-      "type": "defaultEdge",
-      "source": "triggerNode_1",
-      "target": "responseNode_triggerNode_1",
-      "sourceHandle": "bottom",
-      "targetHandle": "top"
-    },
-    {
-      "id": "response-trigger_triggerNode_1",
-      "type": "responseEdge",
-      "source": "triggerNode_1",
-      "target": "responseNode_triggerNode_1",
-      "sourceHandle": "to-response",
-      "targetHandle": "from-trigger"
-    }
-  ],
-  "status": "active",
-  "created_at": "2025-10-23T14:13:01.787011+00:00",
-  "slug": "LittleFarmer",
-  "trigger_id": null,
   "nodes": [
     {
       "id": "triggerNode_1",
@@ -72,9 +50,29 @@ const flowConfig = {
         "x": 0,
         "y": 130
       },
-      "selected": false
+      "selected": true
     }
-  ]
+  ],
+  "edges": [
+    {
+      "id": "triggerNode_1-responseNode_triggerNode_1",
+      "type": "defaultEdge",
+      "source": "triggerNode_1",
+      "target": "responseNode_triggerNode_1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "response-trigger_triggerNode_1",
+      "type": "responseEdge",
+      "source": "triggerNode_1",
+      "target": "responseNode_triggerNode_1",
+      "sourceHandle": "to-response",
+      "targetHandle": "from-trigger"
+    }
+  ],
+  "status": "active",
+  "created_at": "2025-10-23T14:13:01.787011+00:00"
 };
 
 export async function getNodesAndEdges(): Promise<{
